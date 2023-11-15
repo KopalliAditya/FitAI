@@ -2,7 +2,7 @@
 import Link from "next/link";
 import type { FC } from "react";
 import { useState, useEffect } from "react";
-import fitAIimg from "@/public/images/flexed-biceps_fitAI.png";
+import aibro from "@/public/images/ai.jpeg";
 import Image from "next/image";
 import { account } from "@/pages/api/appwriteConfig";
 import { useRouter, usePathname } from "next/navigation";
@@ -53,14 +53,14 @@ const Navbar: FC<NavbarProps> = ({}) => {
     <div
       className={`navbar backdrop-blur-2xl  font-product md:mx-auto py-10 px-24 flex items-center bg-cover bg-no-repeat justify-between
       max-sm:backdrop-blur-none max-sm:bg-none max-sm:overflow-hidden max-sm:py-4 ${
-        isLandingPage && 'bg-[url("../public/images/navbar-checks-bg.svg")]'
+        isLandingPage
       }`}
     >
       <div className="text-4xl font-semibold flex flex-row justify-center items-center gap-1 text-violet-600
        max-sm:mx-auto">
-        <Image className="w-10 h-10" src={fitAIimg} alt={""} />
+        <Image  src={aibro} alt={""} style={{ width: '100px', height: '100px' }} />
         <a href="/">
-          <span> fitai. </span>
+          <span> AI Gym Bro</span>
         </a>
       </div>
       <div className="flex justify-center items-center gap-10 font-medium text-violet-600 text-lg max-sm:hidden">

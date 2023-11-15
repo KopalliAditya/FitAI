@@ -13,7 +13,6 @@ const HomePage = () => {
       <Hero />
       <About />
       <Trainer />
-      <Testimonial />
       <Footer />
     </div>
   );

@@ -21,7 +21,6 @@ const LoginPage: FC<pageProps> = ({}) => {
       navigate.push("/form");
     } catch (error) {
       console.log(error);
-      //navigate.push("/form");
       alert(error);
     }
   };

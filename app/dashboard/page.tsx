@@ -65,13 +65,13 @@ const page: React.FC = () => {
               </button>
             </div>
             <div className="text-xl flex items-center gap-2 max-sm:text-lg">
-              <span> Hello, {userDetails.name}! </span>
+              <span> Hello, {userDetails?.email?.charAt(0)?.toUpperCase()}! </span>
               <div className="bg-violet-500 w-[50px] h-[50px] rounded-full flex justify-center items-center text-white">
                 {firstLetter}
               </div>
             </div>
           </div>
-          <div className="form bg-violet-500 text-white  shadow-lg py-24 rounded-md mt-12  md:mx-auto px-12 border">
+          {/* <div className="form bg-violet-500 text-white  shadow-lg py-24 rounded-md mt-12  md:mx-auto px-12 border">
             <div className="title mt- font-product flex flex-row justify-center items-center">
               <h2 className="mt-2 text-6xl text-white  font-bold tracking-tight">
                 Personal Information
@@ -194,8 +194,8 @@ const page: React.FC = () => {
                 </button>
               </div>
             </div>
-          </div>
-          <div className="plans-section mt-32 font-product flex flex-col justify-center items-center">
+          </div> */}
+          {/* <div className="plans-section mt-32 font-product flex flex-col justify-center items-center">
             <h2 className="mt-2 text-6xl text-violet-500 font-bold tracking-tight max-sm:tracking-tighter max-sm:text-5xl">
               Track Progress
             </h2>
@@ -219,17 +219,17 @@ const page: React.FC = () => {
               officiis iste sit ullam, non minus aliquid. Veritatis, deleniti
               atque?
             </div>
-          </div>
+          </div> */}
           <div className="plans-section bg-violet-500 mt-24 py-24 font-product flex flex-col justify-center items-center">
-            <h2 className="mt-2 text-6xl text-white font-bold  tracking-tight">
-              Saved Plans
+            <h2 className="mt-2 text-6xl text-black font-bold  tracking-tight">
+              Your Plans
             </h2>
             <div
               className="w-[1300px] h-[600px] bg-white overflow-auto p-12 rounded-md mt-24 border-2 text-left border-black max-sm:w-full max-sm:h-[800px]"
               dangerouslySetInnerHTML={{ __html: html }}
             />
           </div>
-          <div className="font-product flex flex-row  py-12 items-center border-2 justify-center md:container md:mx-auto mt-12 max-sm:flex-col">
+          {/* <div className="font-product flex flex-row  py-12 items-center border-2 justify-center md:container md:mx-auto mt-12 max-sm:flex-col">
             <div className="justify-self-center w-auto font-product font-medium">
               <button className=" px-4 py-3 font-semibold rounded-md  bg-violet-600 text-white mx-8 mt-7 hover:scale-105 transition-all">
                 Regenerate💫
@@ -245,7 +245,7 @@ const page: React.FC = () => {
                 Share Profile🚀
               </button>
             </div>
-          </div>
+          </div> */}
           <Footer />
         </>
       ) : (

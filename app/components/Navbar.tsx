@@ -60,7 +60,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
        max-sm:mx-auto">
         <Image className="w-10 h-10" src={fitAIimg} alt={""} />
         <a href="/">
-          <span> fitai. </span>
+          <span> AIGymBro. </span>
         </a>
       </div>
       <div className="flex justify-center items-center gap-10 font-medium text-violet-600 text-lg max-sm:hidden">

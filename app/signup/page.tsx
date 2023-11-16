@@ -68,7 +68,7 @@ const SignUpPage: FC<pageProps> = ({}) => {
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-4 shadow-md sm:rounded-lg sm:px-10">
             <form className="space-y-6" action="#" method="POST">
-              <div>
+              {/* <div>
                 <label
                   htmlFor="name"
                   className="block text-sm font-medium text-gray-700"
@@ -92,7 +92,7 @@ const SignUpPage: FC<pageProps> = ({}) => {
                     }}
                   />
                 </div>
-              </div>
+              </div> */}
               <div>
                 <label
                   htmlFor="email"

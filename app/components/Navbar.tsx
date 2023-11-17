@@ -51,8 +51,8 @@ const Navbar: FC<NavbarProps> = ({}) => {
 
   return (
     <div
-      className={`navbar border-black border-4 backdrop-blur-2xl  font-product md:mx-auto py-10 px-24 flex items-center bg-cover bg-no-repeat justify-between
-      max-sm:backdrop-blur-none max-sm:bg-none max-sm:overflow-hidden max-sm:py-4 ${
+      className={`navbar border-white border-4 backdrop-blur-2xl  font-product md:mx-auto py-6 px-24 flex items-center bg-cover bg-no-repeat justify-between
+      max-sm:backdrop-blur-none max-sm:bg-none max-sm:overflow-hidden max-sm:py-3 ${
         isLandingPage && 'bg-[url("https://tailwindcss.com/_next/static/media/docs@tinypng.d9e4dcdc.png")]'
       }`}
     >

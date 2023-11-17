@@ -1,8 +1,6 @@
 <p align="center">
 </p>
 
-## FitAI (Built at HackThisFall)
-<blockquote> Get Fit with <b>FitAI<b>: Your Virtual Personal Trainer, powered by AI Technology. </blockquote>
 
 📃Table of contents:
 <table>
@@ -32,8 +30,7 @@
 
 </table>
 
-## 💪What is FitAI?
-FitAI is a virtual personal trainer that generates personalized exercise and diet plans for its users. The app tracks the user's progress daily, ensuring that they are on track to reach their fitness goals. The app uses AI algorithms to suggest workouts based on the user's current fitness level and progress, ensuring that their exercise regimen is challenging but achievable.
+
 
 ## 📸 Screenshots
 
@@ -75,7 +72,6 @@ To begin with, first, we did User Research. Next, we created the user flow and f
 
 * For documentation, we have used [Notion]() file.
 
-* To check deployment, visit this link 👉 [FitAi](https://www.fitai.vercel.app/)
 
 ## 🎥Demo Video
 [Click Here to watch FitAI Website Demo Video](https://www.youtube.com/watch?v=Ux5V0gzRdSc)
@@ -90,8 +86,7 @@ To begin with, first, we did User Research. Next, we created the user flow and f
 
 2. Clone the project into your local machine
 
-```sh
-git clone https://github.com/<Your-name>/fitAI.git
+
 ```
 
 3. Navigate the folder

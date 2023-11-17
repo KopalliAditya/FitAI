@@ -15,7 +15,7 @@ const trainer = () => {
           <span className="text-gray-800"> professional trainer.</span>
         </h2>
         <p className="mt-8 text-xl mx-auto w-[26%] max-sm:text-lg max-sm:w-[30ch]">
-          At FitAI, our certified trainers will work with you to develop a
+          At Gym Bro, our certified trainers will work with you to develop a
           comprehensive fitness plan tailored to your unique needs and goals.
         </p>
       </div>

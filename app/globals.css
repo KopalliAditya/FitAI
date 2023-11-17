@@ -16,6 +16,7 @@ body {
 }
 
 .hero-section {
+    background-image: url("https://tailwindcss.com/_next/static/media/docs@tinypng.d9e4dcdc.png");
     background-size: cover;
     background-repeat: no-repeat;
     @apply py-16;

@@ -5,6 +5,7 @@ import { account } from "@/pages/api/appwriteConfig";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import dumbbell from "@/public/images/fitaidumbbell.svg";
+import dumbellz from "@/public/images/dumbellz.jpeg";
 import arrow from "@/public/images/arrow.svg";
 import Navbar from "./Navbar";
 
@@ -55,6 +56,7 @@ const Hero = () => {
         </div>
         <div className="flex flex-row justify-center -mt-10 max-sm:mt-2">
           <Image src={dumbbell} className="w-[380px] max-sm:w-[300px]" alt={""}></Image>
+          {/* <Image src={dumbellz} className="w-[380px] max-sm:w-[300px]" alt={""}></Image> */}
         </div>
         <div className="flex flex-row justify-center -mt-10 hover:cursor-pointer max-sm:mt-2">
           <Image src={arrow} className="w-[50px]" alt={""}></Image>

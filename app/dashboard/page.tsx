@@ -49,27 +49,35 @@ const page: React.FC = () => {
   };
 
     // Function to save the plan to Appwrite database
-  const savePlanToDatabase = async () => {
-    try {
-      // Get the data to be saved (assuming 'state.answer' is the data)
-      const dataToSave = state.answer;
-
-      // Use the Appwrite database SDK to save data to a collection (replace 'collectionId' with your actual collection ID)
-      const response = await database.createDocument(
-        'collectionId',
-        {
-          answer: dataToSave,
-          // Add other relevant fields you want to save along with the answer
-        },
-        ['*'] // Optionally, specify the fields to include in the response
-      );
-
-      // Handle the response as needed
-      console.log('Plan saved:', response);
-    } catch (error) {
-      console.error('Error saving plan:', error);
-    }
-  };
+    const savePlanToDatabase = async () => {
+      try {
+        // Get the data to be saved (assuming 'state.answer' is the data)
+        const dataToSave = state.answer;
+    
+        // Create a Blob with the text content
+        const blob = new Blob([dataToSave], { type: 'text/plain' });
+    
+        // Create a link element
+        const link = document.createElement('a');
+    
+        // Set the download attribute with a filename
+        link.download = 'personalized_plan.txt';
+    
+        // Create a URL for the Blob and set it as the href attribute
+        link.href = URL.createObjectURL(blob);
+    
+        // Append the link to the document
+        document.body.appendChild(link);
+    
+        // Click the link to trigger the download
+        link.click();
+    
+        // Remove the link from the document
+        document.body.removeChild(link);
+      } catch (error) {
+        console.error('Error saving plan:', error);
+      }
+    };
 
   // replaces all newline characters with HTML line break tags
   const html = state?.answer?.replace(/\n/g, "<br>");
@@ -248,11 +256,15 @@ const page: React.FC = () => {
               Your Personalised Plan
             </h2>
             <div
+             id="planTextContainer"
               className="w-[1300px] h-[600px] bg-gray-800 text-white overflow-auto p-12 rounded-md mt-24 border-2 text-left border-gray-800 max-sm:w-full max-sm:h-[800px]"
               dangerouslySetInnerHTML={{ __html: html }}
             />
             <div className="justify-self-center w-auto font-product font-medium">
-              <button className=" px-4 py-3 font-semibold rounded-md  bg-green-600 text-white mx-8 mt-7 hover:scale-105 transition-all">
+              
+              <button 
+              onClick={savePlanToDatabase}
+              className=" px-4 py-3 font-semibold rounded-md  bg-green-600 text-white mx-8 mt-7 hover:scale-105 transition-all">
                 Save Plan
               </button>
             </div>
@@ -290,5 +302,7 @@ const page: React.FC = () => {
     </>
   );
 };
+
+
 
 export default page;

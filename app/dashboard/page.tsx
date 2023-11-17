@@ -48,6 +48,29 @@ const page: React.FC = () => {
     }
   };
 
+    // Function to save the plan to Appwrite database
+  const savePlanToDatabase = async () => {
+    try {
+      // Get the data to be saved (assuming 'state.answer' is the data)
+      const dataToSave = state.answer;
+
+      // Use the Appwrite database SDK to save data to a collection (replace 'collectionId' with your actual collection ID)
+      const response = await database.createDocument(
+        'collectionId',
+        {
+          answer: dataToSave,
+          // Add other relevant fields you want to save along with the answer
+        },
+        ['*'] // Optionally, specify the fields to include in the response
+      );
+
+      // Handle the response as needed
+      console.log('Plan saved:', response);
+    } catch (error) {
+      console.error('Error saving plan:', error);
+    }
+  };
+
   // replaces all newline characters with HTML line break tags
   const html = state?.answer?.replace(/\n/g, "<br>");
 
@@ -55,7 +78,7 @@ const page: React.FC = () => {
     <>
       {userDetails ? (
         <>
-          <div className="md:container md:mx-auto shadow-xl font-product flex flex-row items-center justify-between py-3 px-4 mt-8 border border-black max-sm:overflow-hidden">
+          <div className="md:container md:mx-auto shadow-xl font-product flex flex-row items-center justify-between py-3 px-4 mt-8 border border-gray-800 max-sm:overflow-hidden">
             <div>
               <button
                 className="bg-[#FF4C6E] text-white p-2 rounded-md"
@@ -66,12 +89,12 @@ const page: React.FC = () => {
             </div>
             <div className="text-xl flex items-center gap-2 max-sm:text-lg">
               <span> Hello, {userDetails?.email?.charAt(0)?.toUpperCase()}! </span>
-              <div className="bg-violet-500 w-[50px] h-[50px] rounded-full flex justify-center items-center text-white">
+              <div className="bg-gray-800 w-[50px] h-[50px] rounded-full flex justify-center items-center text-white">
                 {firstLetter}
               </div>
             </div>
           </div>
-          {/* <div className="form bg-violet-500 text-white  shadow-lg py-24 rounded-md mt-12  md:mx-auto px-12 border">
+          {/* <div className="form bg-gray-800 text-white  shadow-lg py-24 rounded-md mt-12  md:mx-auto px-12 border">
             <div className="title mt- font-product flex flex-row justify-center items-center">
               <h2 className="mt-2 text-6xl text-white  font-bold tracking-tight">
                 Personal Information
@@ -88,7 +111,7 @@ const page: React.FC = () => {
                 <input
                   type="text"
                   id="first_name"
-                  className="border border-black shadow-md text-black rounded-sm py-3 pl-3 w-full font-medium "
+                  className="border border-gray-800 shadow-md text-gray-800 rounded-sm py-3 pl-3 w-full font-medium "
                   placeholder="John"
                   value={userDetails.name}
                   required
@@ -104,7 +127,7 @@ const page: React.FC = () => {
                 <input
                   type="text"
                   id="first_name"
-                  className="border border-black shadow-md text-black rounded-sm py-3 pl-3 w-full font-medium "
+                  className="border border-gray-800 shadow-md text-gray-800 rounded-sm py-3 pl-3 w-full font-medium "
                   placeholder="John"
                   value={userDetails.email}
                   required
@@ -122,7 +145,7 @@ const page: React.FC = () => {
                 <input
                   type="text"
                   id="first_name"
-                  className="border border-black shadow-md rounded-sm py-3 pl-3 w-full font-medium "
+                  className="border border-gray-800 shadow-md rounded-sm py-3 pl-3 w-full font-medium "
                   placeholder="95XX4 86XX21"
                   required
                 />
@@ -137,7 +160,7 @@ const page: React.FC = () => {
                 <input
                   type="text"
                   id="first_name"
-                  className="border border-black shadow-md rounded-sm py-3 pl-3 w-full font-medium "
+                  className="border border-gray-800 shadow-md rounded-sm py-3 pl-3 w-full font-medium "
                   placeholder="INDIA"
                   required
                 />
@@ -154,7 +177,7 @@ const page: React.FC = () => {
                 <input
                   type="text"
                   id="first_name"
-                  className="border border-black shadow-md rounded-sm py-3 pl-3 w-full font-medium "
+                  className="border border-gray-800 shadow-md rounded-sm py-3 pl-3 w-full font-medium "
                   placeholder="8, Angels Avenue"
                   required
                 />
@@ -169,7 +192,7 @@ const page: React.FC = () => {
                 <input
                   type="text"
                   id="first_name"
-                  className="border border-black shadow-md rounded-sm py-3 pl-3 w-full font-medium "
+                  className="border border-gray-800 shadow-md rounded-sm py-3 pl-3 w-full font-medium "
                   placeholder="San Diego, California"
                   required
                 />
@@ -178,12 +201,12 @@ const page: React.FC = () => {
 
             <div className="font-product flex flex-row items-center justify-center md:container md:mx-auto mt-12 max-sm:flex-col max-sm:mt-4">
               <div className="justify-self-center w-auto font-product font-medium">
-                <button className=" px-4 py-3 font-semibold rounded-md  bg-black text-white mx-8 mt-7 hover:scale-105 transition-all">
+                <button className=" px-4 py-3 font-semibold rounded-md  bg-gray-800 text-white mx-8 mt-7 hover:scale-105 transition-all">
                   Verify Number
                 </button>
               </div>
               <div className="justigy-self-start w-auto font-product font-medium">
-                <button className="rounded-md px-4 py-3 font-semibold  bg-black text-white mx-8 mt-7 hover:border hover:border-black  hover:scale-105 transition-all">
+                <button className="rounded-md px-4 py-3 font-semibold  bg-gray-800 text-white mx-8 mt-7 hover:border hover:border-gray-800  hover:scale-105 transition-all">
                   Email Verification :
                   {userDetails.emailVerification ? "Verified" : "Not-Verified"}
                 </button>
@@ -196,15 +219,15 @@ const page: React.FC = () => {
             </div>
           </div> */}
           {/* <div className="plans-section mt-32 font-product flex flex-col justify-center items-center">
-            <h2 className="mt-2 text-6xl text-violet-500 font-bold tracking-tight max-sm:tracking-tighter max-sm:text-5xl">
+            <h2 className="mt-2 text-6xl text-gray-800 font-bold tracking-tight max-sm:tracking-tighter max-sm:text-5xl">
               Track Progress
             </h2>
             <Image
-              className=" border border-violet-500 shadow-md mt-24 rounded-md  scale-125 max-sm:hidden"
+              className=" border border-gray-800 shadow-md mt-24 rounded-md  scale-125 max-sm:hidden"
               src={GraphSvg}
               alt={""}
             ></Image>
-            <div className="w-[80ch] text-left text-base text-violet-700 font-medium md:mx-auto py-16 max-sm:w-[30ch] max-sm:text-center">
+            <div className="w-[80ch] text-left text-base text-gray-800-700 font-medium md:mx-auto py-16 max-sm:w-[30ch] max-sm:text-center">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Laboriosam soluta doloremque amet corporis fugit unde, possimus
               laudantium similique delectus nostrum rem blanditiis error
@@ -220,23 +243,29 @@ const page: React.FC = () => {
               atque?
             </div>
           </div> */}
-          <div className="plans-section bg-violet-500 mt-24 py-24 font-product flex flex-col justify-center items-center">
-            <h2 className="mt-2 text-6xl text-black font-bold  tracking-tight">
-              Your Plans
+          <div className="plans-section bg-white mt-24 py-24 font-product flex flex-col justify-center items-center">
+            <h2 className="mt-2 text-6xl text-gray-800 font-bold  tracking-tight">
+              Your Personalised Plan
             </h2>
             <div
-              className="w-[1300px] h-[600px] bg-white overflow-auto p-12 rounded-md mt-24 border-2 text-left border-black max-sm:w-full max-sm:h-[800px]"
+              className="w-[1300px] h-[600px] bg-gray-800 text-white overflow-auto p-12 rounded-md mt-24 border-2 text-left border-gray-800 max-sm:w-full max-sm:h-[800px]"
               dangerouslySetInnerHTML={{ __html: html }}
             />
+            <div className="justify-self-center w-auto font-product font-medium">
+              <button className=" px-4 py-3 font-semibold rounded-md  bg-green-600 text-white mx-8 mt-7 hover:scale-105 transition-all">
+                Save Plan
+              </button>
+            </div>
           </div>
+
           {/* <div className="font-product flex flex-row  py-12 items-center border-2 justify-center md:container md:mx-auto mt-12 max-sm:flex-col">
             <div className="justify-self-center w-auto font-product font-medium">
-              <button className=" px-4 py-3 font-semibold rounded-md  bg-violet-600 text-white mx-8 mt-7 hover:scale-105 transition-all">
+              <button className=" px-4 py-3 font-semibold rounded-md  bg-gray-800 text-white mx-8 mt-7 hover:scale-105 transition-all">
                 Regenerate💫
               </button>
             </div>
             <div className="justigy-self-start w-auto font-product font-medium">
-              <button className="rounded-md px-5 py-3 font-semibold  bg-violet-600 text-white mx-8 mt-7 hover:border hover:border-black  hover:scale-105 transition-all">
+              <button className="rounded-md px-5 py-3 font-semibold  bg-gray-800 text-white mx-8 mt-7 hover:border hover:border-gray-800  hover:scale-105 transition-all">
                 Add your Diet🤩
               </button>
             </div>

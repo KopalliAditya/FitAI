@@ -35,23 +35,20 @@ const Hero = () => {
   return (
     <div className="hero-section md:mx-auto max-sm:bg-none">
       <div className="hero-title text-7xl  pt-2 font-product gap-2 font-bold flex flex-col justify-center items-center max-sm:text-3xl">
-        <span className="font-extrabold">Transform your</span>
+      <span className="font-extrabold">Get Your</span>
         <span className="font-extrabold">
-          fitness journey with{" "}
-          <span className="text-purple-500 font-extrabold">AI Gym Bro.</span>
+        Personalised Fitness Recommendation{" "}
         </span>
-        <p className="mt-4 text-lg w-[551px] font-semibold mx-auto leading-8 text-gray-600 sm:text-center max-sm:w-[340px]">
-          Customized workout and diet plans, powered by AI. Say goodbye to
-          generic routines and hello to a virtual personal trainer that adapts
-          to your progress and motivates you towards success.
+        <p className="mt-4 text-lg w-[551px] font-semibold mx-auto leading-8 text-gray-800-600 sm:text-center max-sm:w-[340px]">
+          Customized workout and diet plans, powered by AI. 
         </p>
         <div className="mt-8 flex gap-x-8 sm:justify-center justify-center">
           <Link
             href={userDetails?.email ? "/form" : "/signup"}
-            className="z-10 inline-block rounded-md px-5 py-3 text-lg font-medium leading-7 border-2 text-black shadow-sm  border-violet-500  hover:border-violet-700"
+            className="z-10 inline-block rounded-md px-5 py-3 text-lg font-medium leading-7 border-2 text-gray-800 shadow-sm  border-gray-800  hover:border-gray-800-700"
           >
             Get started
-            <span className="text-black font-bold ml-2" aria-hidden="true">
+            <span className="text-gray-800 font-bold ml-2" aria-hidden="true">
               &rarr;
             </span>
           </Link>

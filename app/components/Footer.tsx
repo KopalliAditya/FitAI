@@ -3,10 +3,10 @@ const footer = () => {
     <footer className="md:container md:mx-auto bg-white pt-24 font-product">
       <div className="grid grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
         <div>
-          <h2 className="mb-6 text-sm font-semibold text-violet-600 uppercase">
+          <h2 className="mb-6 text-sm font-semibold text-gray-800 uppercase">
             Company
           </h2>
-          <ul className="text-black">
+          <ul className="text-gray-800">
             <li className="mb-4">
               <a href="#" className=" hover:underline">
                 About
@@ -30,10 +30,10 @@ const footer = () => {
           </ul>
         </div>
         <div>
-          <h2 className="mb-6 text-sm font-semibold text-violet-600 uppercase">
+          <h2 className="mb-6 text-sm font-semibold text-gray-800 uppercase">
             Help center
           </h2>
-          <ul className="text-black">
+          <ul className="text-gray-800">
             <li className="mb-4">
               <a href="#" className="hover:underline">
                 Discord Server
@@ -57,10 +57,10 @@ const footer = () => {
           </ul>
         </div>
         <div>
-          <h2 className="mb-6 text-sm font-semibold text-violet-600 uppercase">
+          <h2 className="mb-6 text-sm font-semibold text-gray-800 uppercase">
             Legal
           </h2>
-          <ul className="text-black">
+          <ul className="text-gray-800">
             <li className="mb-4">
               <a href="#" className="hover:underline">
                 Privacy Policy
@@ -79,10 +79,10 @@ const footer = () => {
           </ul>
         </div>
         <div>
-          <h2 className="mb-6 text-sm font-semibold text-violet-600 uppercase">
+          <h2 className="mb-6 text-sm font-semibold text-gray-800 uppercase">
             Download
           </h2>
-          <ul className="text-black">
+          <ul className="text-gray-800">
             <li className="mb-4">
               <a href="#" className="hover:underline">
                 iOS
@@ -107,12 +107,12 @@ const footer = () => {
         </div>
       </div>
       <div className="px-4 mt-8 py-6 border rounded-xl shadow-md md:flex md:items-center md:justify-between">
-        <span className="text-sm text-violet-400 sm:text-center">
+        <span className="text-sm text-gray-800-400 sm:text-center">
           © 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights
           Reserved.
         </span>
         <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0 max-sm:justify-center">
-          <a href="#" className="text-violet-500 hover:text-violet-900">
+          <a href="#" className="text-gray-800 hover:text-gray-800-900">
             <svg
               className="w-5 h-5"
               fill="currentColor"
@@ -127,7 +127,7 @@ const footer = () => {
             </svg>
             <span className="sr-only">Facebook page</span>
           </a>
-          <a href="#" className="text-violet-500 hover:text-violet-900">
+          <a href="#" className="text-gray-800 hover:text-gray-800-900">
             <svg
               className="w-5 h-5"
               fill="currentColor"
@@ -142,7 +142,7 @@ const footer = () => {
             </svg>
             <span className="sr-only">Instagram page</span>
           </a>
-          <a href="#" className="text-violet-500 hover:text-violet-900">
+          <a href="#" className="text-gray-800 hover:text-gray-800-900">
             <svg
               className="w-5 h-5"
               fill="currentColor"
@@ -153,7 +153,7 @@ const footer = () => {
             </svg>
             <span className="sr-only">Twitter page</span>
           </a>
-          <a href="#" className="text-violet-500 hover:text-violet-900">
+          <a href="#" className="text-gray-800 hover:text-gray-800-900">
             <svg
               className="w-5 h-5"
               fill="currentColor"
@@ -168,7 +168,7 @@ const footer = () => {
             </svg>
             <span className="sr-only">GitHub account</span>
           </a>
-          <a href="#" className="text-violet-500 hover:text-violet-900">
+          <a href="#" className="text-gray-800 hover:text-gray-800-900">
             <svg
               className="w-5 h-5"
               fill="currentColor"

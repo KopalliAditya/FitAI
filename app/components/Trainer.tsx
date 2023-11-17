@@ -12,7 +12,7 @@ const trainer = () => {
       <div className="title flex flex-col justify-center items-center">
         <h2 className="mt-2 text-6xl font-extrabold w-[20ch] tracking-tight max-sm:text-4xl max-sm:w-[14ch]">
           Maximize your potential with a
-          <span className="text-violet-500"> professional trainer.</span>
+          <span className="text-gray-800"> professional trainer.</span>
         </h2>
         <p className="mt-8 text-xl mx-auto w-[26%] max-sm:text-lg max-sm:w-[30ch]">
           At FitAI, our certified trainers will work with you to develop a
@@ -26,7 +26,7 @@ const trainer = () => {
             src={trainerOne}
             alt="trainer_img"
           />
-          <span className="text-xl font-medium mt-6 text-violet-500">
+          <span className="text-xl font-medium mt-6 text-gray-800">
             John Doe
           </span>
         </div>
@@ -37,7 +37,7 @@ const trainer = () => {
             src={trainerTwo}
             alt="trainer_img"
           />
-          <span className="text-2xl font-medium mt-6 text-violet-500">
+          <span className="text-2xl font-medium mt-6 text-gray-800">
             John Doe
           </span>
         </div>
@@ -48,7 +48,7 @@ const trainer = () => {
             src={trainerThree}
             alt=""
           />
-          <span className="text-xl font-medium mt-6 text-violet-500">
+          <span className="text-xl font-medium mt-6 text-gray-800">
             John Doe
           </span>
         </div>

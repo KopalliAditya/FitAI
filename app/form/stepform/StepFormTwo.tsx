@@ -23,23 +23,23 @@ const StepForm2 = () => {
       >
         <button
           onClick={() => handleClick("massgain")}
-          className={` bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
-            selectedType === "massgain" && "bg-violet-500 text-white"
+          className={` bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
+            selectedType === "massgain" && "bg-gray-800 text-white"
           } `}
         >
           Mass gain
         </button>
         <button
           onClick={() => handleClick("fit")}
-          className={`  bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-8 rounded-md ${
-            selectedType === "fit" && "bg-violet-500 text-white"
+          className={`  bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-8 rounded-md ${
+            selectedType === "fit" && "bg-gray-800 text-white"
           }`}
         >
           Fit
         </button>
         <button
-          className={`  bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
-            selectedType === "weightloss" && "bg-violet-500 text-white"
+          className={`  bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
+            selectedType === "weightloss" && "bg-gray-800 text-white"
           }`}
           onClick={() => handleClick("weightloss")}
         >

@@ -5,7 +5,7 @@ const Loader = () => {
   return (
     <div className="min-w-screen min-h-screen flex items-center justify-center bg-[#00000032]">
       <div>
-        <CircularProgress className="text-violet-500" />
+        <CircularProgress className="text-gray-800" />
       </div>
     </div>
   );

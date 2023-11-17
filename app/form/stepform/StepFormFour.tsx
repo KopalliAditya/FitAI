@@ -43,35 +43,35 @@ const StepForm4 = () => {
               className="mt-8 gap-2 max-sm:flex-col"
             >
               <button
-                className={` bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
+                className={` bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
                   state.exerciseType === "homeworkout" &&
-                  "bg-violet-500 text-white"
+                  "bg-gray-800 text-white"
                 } `}
                 onClick={() => handleExerciseType("homeworkout")}
               >
                 Home workout
               </button>
               <button
-                className={` bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
+                className={` bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
                   state.exerciseType === "calesthenics" &&
-                  "bg-violet-500 text-white"
+                  "bg-gray-800 text-white"
                 } `}
                 onClick={() => handleExerciseType("calesthenics")}
               >
                 Calesthenics
               </button>
               <button
-                className={` bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
+                className={` bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
                   state.exerciseType === "weightlifting" &&
-                  "bg-violet-500 text-white"
+                  "bg-gray-800 text-white"
                 } `}
                 onClick={() => handleExerciseType("weightlifting")}
               >
                 Weight lifting
               </button>
               <button
-                className={` bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
-                  state.exerciseType === "yoga" && "bg-violet-500 text-white"
+                className={` bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
+                  state.exerciseType === "yoga" && "bg-gray-800 text-white"
                 } `}
                 onClick={() => handleExerciseType("yoga")}
               >
@@ -87,27 +87,27 @@ const StepForm4 = () => {
               className="mt-8 gap-2 max-sm:flex-col"
             >
               <button
-                className={` bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
+                className={` bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
                   state.exerciseExperience === "beginner" &&
-                  "bg-violet-500 text-white"
+                  "bg-gray-800 text-white"
                 } `}
                 onClick={() => handleExerciseExperience("beginner")}
               >
                 Beginner
               </button>
               <button
-                className={` bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
+                className={` bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
                   state.exerciseExperience === "Intermediate" &&
-                  "bg-violet-500 text-white"
+                  "bg-gray-800 text-white"
                 } `}
                 onClick={() => handleExerciseExperience("Intermediate")}
               >
                 Intermediate
               </button>
               <button
-                className={` bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
+                className={` bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
                   state.exerciseExperience === "Expert" &&
-                  "bg-violet-500 text-white"
+                  "bg-gray-800 text-white"
                 } `}
                 onClick={() => handleExerciseExperience("Expert")}
               >
@@ -128,34 +128,34 @@ const StepForm4 = () => {
               className="gap-2 max-sm:flex-col"
             >
               <button
-                className={` bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
-                  state.foodPreference === "veg" && "bg-violet-500 text-white"
+                className={` bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
+                  state.foodPreference === "veg" && "bg-gray-800 text-white"
                 } `}
                 onClick={() => handleFoodPreference("veg")}
               >
                 Veg
               </button>
               <button
-                className={` bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
+                className={` bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
                   state.foodPreference === "non-veg" &&
-                  "bg-violet-500 text-white"
+                  "bg-gray-800 text-white"
                 } `}
                 onClick={() => handleFoodPreference("non-veg")}
               >
                 Non-veg
               </button>
               <button
-                className={` bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
+                className={` bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
                   state.foodPreference === "vegandnonveg" &&
-                  "bg-violet-500 text-white"
+                  "bg-gray-800 text-white"
                 } `}
                 onClick={() => handleFoodPreference("vegandnonveg")}
               >
                 Both
               </button>
               <button
-                className={` bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
-                  state.foodPreference === "vegan" && "bg-violet-500 text-white"
+                className={` bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
+                  state.foodPreference === "vegan" && "bg-gray-800 text-white"
                 } `}
                 onClick={() => handleFoodPreference("vegan")}
               >
@@ -174,7 +174,7 @@ const StepForm4 = () => {
                 className="w-[15em]"
                 id="standard-adornment-amount"
                 startAdornment={
-                  <InputAdornment position="start">₹</InputAdornment>
+                  <InputAdornment position="start">$</InputAdornment>
                 }
               />
             </FormControl>
@@ -188,16 +188,16 @@ const StepForm4 = () => {
               className="gap-2 mt-2 product-font max-sm:flex-col "
             >
               <button
-                className={` bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
-                  state.dietType === "homediet" && "bg-violet-500 text-white"
+                className={` bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
+                  state.dietType === "homediet" && "bg-gray-800 text-white"
                 } `}
                 onClick={() => handleDietType("homediet")}
               >
                 Home{" "}
               </button>
               <button
-                className={` bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
-                  state.dietType === "hosteldiet" && "bg-violet-500 text-white"
+                className={` bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
+                  state.dietType === "hosteldiet" && "bg-gray-800 text-white"
                 } `}
                 onClick={() => handleDietType("hosteldiet")}
               >

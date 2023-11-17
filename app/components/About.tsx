@@ -15,12 +15,12 @@ const about = () => {
     <div className="about-section font-product  pb-44 pt-36 max-sm:pt-12 max-sm:pb-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="sm:text-center flex flex-col justify-center items-center ">
-          <h2 className=" font-semibold text-2xl leading-8 text-violet-600">
+          <h2 className=" font-semibold text-2xl leading-8 text-gray-800">
             Fitness
           </h2>
-          <p className="mt-6 text-6xl leading-tight text-black font-extrabold  w-[16ch] max-sm:text-4xl max-sm:w-[12ch]">
+          <p className="mt-6 text-6xl leading-tight text-gray-800 font-extrabold  w-[16ch] max-sm:text-4xl max-sm:w-[12ch]">
             A better way to improve your
-            <span className=" text-violet-600"> Health </span>
+            <span className=" text-gray-800"> Health </span>
           </p>
           <p className="mx-auto mt-6 max-w-2xl text-xl leading-8 w-[40%] max-sm:w-[28ch] max-sm:text-lg max-sm:">
             Take control of your health and reach your fitness goals with FitAI,
@@ -32,7 +32,7 @@ const about = () => {
         <div className="pt-36 flex flex-col justify-center gap-20 max-sm:pt-12">
           <div className="flex flex-row justify-around items-center max-sm:flex-col">
             <div className="text-content flex flex-col justify-center items-center gap-4">
-              <div className="border-2 border-violet-600 rounded-md w-[440px] h-[300px] flex justify-center items-center max-sm:w-[300px] max-sm:h-[260px]  ">
+              <div className="border-2 border-gray-800 rounded-md w-[440px] h-[300px] flex justify-center items-center max-sm:w-[300px] max-sm:h-[260px]  ">
                 <Image src={fitnessIcon} className="w-[48%]" alt={""}></Image>
               </div>
               <div className="w-[400px] text-2xl font-medium max-sm:w-[300px] max-sm:text-xl">
@@ -41,7 +41,7 @@ const about = () => {
               </div>
             </div>
             <div className="text-content flex flex-col justify-center items-center gap-4 max-sm:mt-12">
-              <div className="border-2 border-violet-600 rounded-md w-[440px] h-[300px] flex justify-center items-center max-sm:w-[300px] max-sm:h-[260px]">
+              <div className="border-2 border-gray-800 rounded-md w-[440px] h-[300px] flex justify-center items-center max-sm:w-[300px] max-sm:h-[260px]">
                 <Image
                   src={fitnessIconSecond}
                   className="w-[58%] mt-8"
@@ -56,7 +56,7 @@ const about = () => {
           </div>
           <div className="flex flex-row justify-around items-center max-sm:flex-col">
             <div className="text-content flex flex-col justify-center items-center gap-4">
-              <div className="border-2 border-violet-600 rounded-md w-[440px] h-[300px] flex justify-center items-center max-sm:w-[300px] max-sm:h-[260px]">
+              <div className="border-2 border-gray-800 rounded-md w-[440px] h-[300px] flex justify-center items-center max-sm:w-[300px] max-sm:h-[260px]">
                 <Image
                   src={fitnessIconThird}
                   className="w-[48%]"
@@ -69,7 +69,7 @@ const about = () => {
               </div>
             </div>
             <div className="text-content flex flex-col justify-center items-center gap-4 max-sm:mt-12">
-              <div className="border-2 border-violet-600 rounded-md w-[440px] h-[300px] flex justify-center items-center max-sm:w-[300px] max-sm:h-[260px]">
+              <div className="border-2 border-gray-800 rounded-md w-[440px] h-[300px] flex justify-center items-center max-sm:w-[300px] max-sm:h-[260px]">
                 <Image
                   src={fitnessIconFour}
                   className="w-[48%]"

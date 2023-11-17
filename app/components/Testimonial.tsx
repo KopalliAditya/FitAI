@@ -40,7 +40,7 @@ const testimonial = () => {
         <h2 className="mt-2 text-6xl font-extrabold tracking-tight w-[14ch] leading-tight max-sm:text-4xl max-sm">
           {" "}
           Hear from our
-          <span className="text-violet-500"> Satisfied Customers.</span>
+          <span className="text-gray-800"> Satisfied Customers.</span>
         </h2>
       </div>
       <div className="testimonial-cards mt-12">
@@ -53,14 +53,14 @@ const testimonial = () => {
                 Read reviews from our customers
               </h2>
 
-              <p className="mt-4 text-violet-600 font-medium">
+              <p className="mt-4 text-gray-800 font-medium">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Voluptas veritatis illo placeat harum porro optio fugit a culpa
                 sunt id!
               </p>
 
               <div className="hidden lg:mt-8 lg:flex lg:gap-4  transition-all">
-                <button className="prev-button rounded-full border-2 p-3  hover:bg-white hover:text-violet-600">
+                <button className="prev-button rounded-full border-2 p-3  hover:bg-white hover:text-gray-800">
                   <span className="sr-only">Previous Slide</span>
                   <svg
                     className="h-5 w-5 -rotate-180 transform"
@@ -78,7 +78,7 @@ const testimonial = () => {
                   </svg>
                 </button>
 
-                <button className="next-button rounded-full border-2 p-3  hover:bg-white hover:text-violet-600">
+                <button className="next-button rounded-full border-2 p-3  hover:bg-white hover:text-gray-800">
                   <span className="sr-only">Next Slide</span>
                   <svg
                     className="h-5 w-5"
@@ -98,11 +98,11 @@ const testimonial = () => {
               </div>
             </div>
 
-            <div className="-mx-6 shadow-lg border border-gray-300 p-4 lg:col-span-2 lg:mx-0">
+            <div className="-mx-6 shadow-lg border border-gray-800-300 p-4 lg:col-span-2 lg:mx-0">
               <div className="swiper-container !overflow-hidden">
                 <div className="swiper-wrapper">
                   <div className="swiper-slide">
-                    <blockquote className="flex h-full flex-col justify-between rounded-md border-2 border-violet-500 bg-white  shadow-xl p-12">
+                    <blockquote className="flex h-full flex-col justify-between rounded-md border-2 border-gray-800 bg-white  shadow-xl p-12">
                       <div>
                         <div className="flex gap-0.5 text-green-500">
                           <svg
@@ -156,7 +156,7 @@ const testimonial = () => {
                             Stayin' Alive
                           </p>
 
-                          <p className="mt-4 leading-relaxed text-gray-500">
+                          <p className="mt-4 leading-relaxed text-gray-800-500">
                             No, Rose, they are not breathing. And they have no
                             arms or legs … Where are they? You know what? If we
                             come across somebody with no arms or legs, do we
@@ -166,14 +166,14 @@ const testimonial = () => {
                         </div>
                       </div>
 
-                      <footer className="mt-8 text-sm text-gray-500">
+                      <footer className="mt-8 text-sm text-gray-800-500">
                         &mdash; Michael Scott
                       </footer>
                     </blockquote>
                   </div>
 
                   <div className="swiper-slide">
-                    <blockquote className="flex h-full flex-col rounded-md border-2 border-violet-500 justify-between bg-white p-12">
+                    <blockquote className="flex h-full flex-col rounded-md border-2 border-gray-800 justify-between bg-white p-12">
                       <div>
                         <div className="flex gap-0.5 text-green-500">
                           <svg
@@ -227,7 +227,7 @@ const testimonial = () => {
                             Stayin' Alive
                           </p>
 
-                          <p className="mt-4 leading-relaxed text-gray-500">
+                          <p className="mt-4 leading-relaxed text-gray-800-500">
                             No, Rose, they are not breathing. And they have no
                             arms or legs … Where are they? You know what? If we
                             come across somebody with no arms or legs, do we
@@ -237,14 +237,14 @@ const testimonial = () => {
                         </div>
                       </div>
 
-                      <footer className="mt-8 text-sm text-gray-500">
+                      <footer className="mt-8 text-sm text-gray-800-500">
                         &mdash; Michael Scott
                       </footer>
                     </blockquote>
                   </div>
 
                   <div className="swiper-slide">
-                    <blockquote className="flex h-full flex-col rounded-md border-2 border-violet-500 justify-between bg-white p-12">
+                    <blockquote className="flex h-full flex-col rounded-md border-2 border-gray-800 justify-between bg-white p-12">
                       <div>
                         <div className="flex gap-0.5 text-green-500">
                           <svg
@@ -298,7 +298,7 @@ const testimonial = () => {
                             Stayin' Alive
                           </p>
 
-                          <p className="mt-4 leading-relaxed text-gray-500">
+                          <p className="mt-4 leading-relaxed text-gray-800-500">
                             No, Rose, they are not breathing. And they have no
                             arms or legs … Where are they? You know what? If we
                             come across somebody with no arms or legs, do we
@@ -308,7 +308,7 @@ const testimonial = () => {
                         </div>
                       </div>
 
-                      <footer className="mt-8 text-sm text-gray-500">
+                      <footer className="mt-8 text-sm text-gray-800-500">
                         &mdash; Michael Scott
                       </footer>
                     </blockquote>
@@ -321,7 +321,7 @@ const testimonial = () => {
           <div className="mt-8 flex justify-center gap-4 lg:hidden">
             <button
               aria-label="Previous slide"
-              className="prev-button rounded-full border-2 p-4 hover:bg-white hover:text-violet-600"
+              className="prev-button rounded-full border-2 p-4 hover:bg-white hover:text-gray-800"
             >
               <svg
                 className="h-5 w-5 -rotate-180 transform"
@@ -341,7 +341,7 @@ const testimonial = () => {
 
             <button
               aria-label="Next slide"
-              className="next-button rounded-full border-2 p-4 hover:bg-white hover:text-violet-600"
+              className="next-button rounded-full border-2 p-4 hover:bg-white hover:text-gray-800"
             >
               <svg
                 className="h-5 w-5"

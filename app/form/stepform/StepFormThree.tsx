@@ -13,16 +13,16 @@ const StepForm3 = () => {
       <h1 className="text-4xl font-bold max-sm:text-center">What kind of plan do you want?</h1>
       <div className="flex items-center justify-center gap-10 max-sm:flex-col">
         <button
-          className={` bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
-            state.selectedPlan === "dietplan" && "bg-violet-500 text-white"
+          className={` bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
+            state.selectedPlan === "dietplan" && "bg-gray-800 text-white"
           }`}
           onClick={() => handleClick("dietplan")}
         >
           Diet Plan
         </button>
         <button
-          className={` bg-white hover:scale-105 transition-all border-2 border-black font-medium py-2 px-4 rounded-md ${
-            state.selectedPlan === "exercise" && "bg-violet-500 text-white"
+          className={` bg-white hover:scale-105 transition-all border-2 border-gray-800 font-medium py-2 px-4 rounded-md ${
+            state.selectedPlan === "exercise" && "bg-gray-800 text-white"
           }`}
           onClick={() => handleClick("exercise")}
         >

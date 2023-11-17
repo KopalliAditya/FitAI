@@ -43,7 +43,7 @@ const SignUpPage: FC<pageProps> = ({}) => {
       uuidv4(),
       user.email,
       user.password,
-      user.name
+      //user.name
     );
 
     promise.then(

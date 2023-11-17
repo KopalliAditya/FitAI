@@ -29,6 +29,12 @@ const AdminPage: React.FC = () => {
     fetchData();
   }, []);
 
+  const handleDeleteUser = (userId: string) => {
+    // Remove the user from the UI
+    setUsers((prevUsers) => prevUsers.filter((user) => user.$id !== userId));
+    // You might want to add logic here to delete the user from your backend/API
+  };
+
   return (
     <div className="flex items-center justify-center h-screen">
       <div className="text-center">
@@ -42,6 +48,7 @@ const AdminPage: React.FC = () => {
               <tr>
                 <th className="py-2 px-4 border-b">Serial Number</th>
                 <th className="py-2 px-4 border-b pl-4">Email ID</th>
+                <th className="py-2 px-4 border-b">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -49,6 +56,14 @@ const AdminPage: React.FC = () => {
                 <tr key={user.$id}>
                   <td className="py-2 px-4 border-b text-center">{index + 1}</td>
                   <td className="py-2 px-4 border-b pl-4">{user.email}</td>
+                  <td className="py-2 px-4 border-b">
+                    <button
+                      className="text-red-500"
+                      onClick={() => handleDeleteUser(user.$id)}
+                    >
+                      Delete
+                    </button>
+                  </td>
                 </tr>
               ))}
             </tbody>

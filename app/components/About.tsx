@@ -33,7 +33,7 @@ const about = () => {
           <div className="flex flex-row justify-around items-center max-sm:flex-col">
             <div className="text-content flex flex-col justify-center items-center gap-4">
               <div className="border-2 border-gray-800 rounded-md w-[440px] h-[300px] flex justify-center items-center max-sm:w-[300px] max-sm:h-[260px]  ">
-                <Image src={fitnessIcon} className="w-[48%]" alt={""}></Image>
+                <Image src={fitnessIconSecond} className="w-[48%]" alt={""}></Image>
               </div>
               <div className="w-[400px] text-2xl font-medium max-sm:w-[300px] max-sm:text-xl">
                 Transform Your Diet: Say goodbye to boring and unhealthy meals
@@ -54,34 +54,7 @@ const about = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row justify-around items-center max-sm:flex-col">
-            <div className="text-content flex flex-col justify-center items-center gap-4">
-              <div className="border-2 border-gray-800 rounded-md w-[440px] h-[300px] flex justify-center items-center max-sm:w-[300px] max-sm:h-[260px]">
-                <Image
-                  src={fitnessIconThird}
-                  className="w-[48%]"
-                  alt={""}
-                ></Image>
-              </div>
-              <div className="w-[400px] text-2xl font-medium max-sm:w-[300px] max-sm:text-xl">
-                Track Your Progress: Monitor your progress and celebrate your
-                wins with our easy-to-use tracking tools.
-              </div>
-            </div>
-            <div className="text-content flex flex-col justify-center items-center gap-4 max-sm:mt-12">
-              <div className="border-2 border-gray-800 rounded-md w-[440px] h-[300px] flex justify-center items-center max-sm:w-[300px] max-sm:h-[260px]">
-                <Image
-                  src={fitnessIconFour}
-                  className="w-[48%]"
-                  alt={""}
-                ></Image>
-              </div>
-              <div className="w-[400px] text-2xl font-medium max-sm:w-[300px] max-sm:text-xl">
-                Expert Support: Get the support you need from our team of
-                certified health professionals, available 24/7.
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>

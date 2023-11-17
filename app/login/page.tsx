@@ -18,10 +18,16 @@ const LoginPage: FC<pageProps> = ({}) => {
     e.preventDefault();
     try {
       await account.createEmailSession(user.email, user.password);
-      navigate.push("/form");
+
+      // Check if the user email is 'harshit_chouksey@yahoo.co.in'
+      if (user.email === 'kopalliaditya96@gmail.com') {
+        navigate.push("/admin"); // Navigate to the admin view
+      } else {
+        navigate.push("/form"); // Navigate to the default form view
+      }
+
     } catch (error) {
       console.log(error);
-      //navigate.push("/form");
       alert(error);
     }
   };

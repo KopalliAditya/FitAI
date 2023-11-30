@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { Configuration, OpenAIApi } from "openai";
-const apiKey = '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';
+const apiKey = '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';
 
 // const configuration = new Configuration({
 //   //apiKey: process.env.OPEN_API_KEY,

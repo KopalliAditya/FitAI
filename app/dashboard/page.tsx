@@ -42,42 +42,43 @@ const page: React.FC = () => {
   const handleLogout = async () => {
     try {
       await account.deleteSession("current");
-      router.push("/");
+      window.location.href = "/";
+      window.location.reload();
     } catch (error) {
       console.log(error);
     }
   };
 
     // Function to save the plan to Appwrite database
-    const savePlanToDatabase = async () => {
-      try {
-        // Get the data to be saved (assuming 'state.answer' is the data)
-        const dataToSave = state.answer;
-    
-        // Create a Blob with the text content
-        const blob = new Blob([dataToSave], { type: 'text/plain' });
-    
-        // Create a link element
-        const link = document.createElement('a');
-    
-        // Set the download attribute with a filename
-        link.download = 'personalized_plan.txt';
-    
-        // Create a URL for the Blob and set it as the href attribute
-        link.href = URL.createObjectURL(blob);
-    
-        // Append the link to the document
-        document.body.appendChild(link);
-    
-        // Click the link to trigger the download
-        link.click();
-    
-        // Remove the link from the document
-        document.body.removeChild(link);
-      } catch (error) {
-        console.error('Error saving plan:', error);
-      }
-    };
+  const savePlanToDatabase = async () => {
+  try {
+    // Get the data to be saved (assuming 'state.answer' is the data)
+    const dataToSave = state.answer;
+
+    // Create a Blob with the text content
+    const blob = new Blob([dataToSave], { type: 'text/plain' });
+
+    // Create a link element
+    const link = document.createElement('a');
+
+    // Set the download attribute with a filename
+    link.download = 'personalized_plan.txt';
+
+    // Create a URL for the Blob and set it as the href attribute
+    link.href = URL.createObjectURL(blob);
+
+    // Append the link to the document
+    document.body.appendChild(link);
+
+    // Click the link to trigger the download
+    link.click();
+
+    // Remove the link from the document
+    document.body.removeChild(link);
+  } catch (error) {
+    console.error('Error saving plan:', error);
+  }
+};
 
   // replaces all newline characters with HTML line break tags
   const html = state?.answer?.replace(/\n/g, "<br>");

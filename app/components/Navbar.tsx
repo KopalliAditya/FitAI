@@ -29,7 +29,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
   const handleLogout = async () => {
     try {
       await account.deleteSession("current");
-      router.push("/");
+      window.location.href = "/";
       window.location.reload();
     } catch (error) {
       console.log(error);
@@ -100,6 +100,15 @@ const Navbar: FC<NavbarProps> = ({}) => {
                 id="login-button"
               >
                 Login
+              </button>
+            </Link>
+
+            <Link href="/chat">
+              <button
+                className="border-2 border-gray-800 text-gray-800 rounded-md px-6 py-2  transition-all"
+                id="chat-button"
+              >
+                Chat
               </button>
             </Link>
 

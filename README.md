@@ -36,15 +36,23 @@ The platform offers features like personalized diet transformation, workout plan
 
 Navigate to the project folder:
 
+sh
+Copy code
 cd FitAI
 Install dependencies:
 
+sh
+Copy code
 npm install
 Create a .env file in the root directory with:
 
+sh
+Copy code
 OPEN_API_KEY='YOUR OPENAI API KEY'
 Run the project locally:
 
+sh
+Copy code
 npm run dev
 Open your browser and visit http://localhost:3000 to view the AIGYMBro app.
 

@@ -53,3 +53,7 @@ Open your browser and visit http://localhost:3000 to view the AIGYMBro app.
 1. Fork the repo and clone it:
    ```sh
    git clone https://github.com/KopalliAditya/FitAI
+
+## Hosted website active till 11/30/2023 - 11:59 PM
+
+https://57c8-2601-646-9d80-bc80-1597-88e1-a9ea-a07d.ngrok-free.app 
